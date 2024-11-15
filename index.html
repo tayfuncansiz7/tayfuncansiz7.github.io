@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tayfun Cansız</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+        <link rel="icon" href="images/kanarya2.gif" type="image/png">
+    </head>
+    
+<body id="home-page">
+    
+<nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="about.html">Hakkımda</a>
+    <a href="projects.html">Projelerim</a>
+</nav>
+
+<h1>Tayfun'un Kişisel Portföyüne Hoşgeldiniz</h1>
+<div id="clock"></div>
+
+
+<div class="photo-container">
+    <img src="images/kanarya.png" alt="Example Photo" class="center-photo"> 
+</div>
+
+<!-- Form ve Fotoğraf Alanı -->
+<div class="contact-container">
+    <img src="images/kanarya2.gif" alt="Photo Left" class="side-photo">
+    
+    <!-- İletişim Formu -->
+    <form id="contactForm" onsubmit="validateForm(event)">
+        <input type="text" id="name" placeholder="İsim">
+        <input type="email" id="email" placeholder="E-posta">
+        <input id="message" placeholder="Mesaj">
+        <button type="submit">Gönder</button>
+        <p id="errorMessage" style="color: navy; display: none;"></p>
+    </form>
+    
+    <img src="images/kanarya2.gif" alt="Photo Right" class="side-photo">
+</div>
+
+</body>
+</html>

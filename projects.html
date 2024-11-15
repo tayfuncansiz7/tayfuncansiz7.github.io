@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projelerim</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+        <link rel="icon" href="images/kanarya2.gif" type="image/png"> 
+    </head>
+<body id="projects-page">
+    
+<nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="about.html">Hakkımda</a>
+    <a href="projects.html">Projelerim</a>
+</nav>
+
+<section id="projects">
+    <h2>Projelerim</h2>
+    <div>
+        <button onclick="filterProjects('recent')">En Son Projeler</button>
+        <button onclick="filterProjects('popular')">En Beğenilen Projeler</button>
+        <button onclick="filterProjects('all')">Tüm Projeler</button>
+    </div>
+    
+    <div class="project" data-category="recent">
+        <h3>Ambulans Navigasyon Sistemi Projesi</h3>
+        <img src="images/project1.png" alt="Proje 1">
+        <p>Bu proje, yoğun trafikte ambulansların daha hızlı ve güvenli bir şekilde ilerleyebilmesi için geliştirilen bir navigasyon sistemini içerir. Ambulans Navigasyon Sistemi, ambulans güzergâhındaki trafiği yönlendiren ışıklı bir yol sistemi sunar. Ambulansın geçtiği ana caddeler ve yoğun trafik bölgelerindeki ışıklar, önceden belirlenen şeritleri boşaltarak ve trafik ışıklarını yeşile çevirerek, ambulansın en hızlı şekilde ilerlemesini sağlar. Bu çözüm, acil durumlarda müdahale süresini azaltırken ses kirliliğini de en aza indirmeyi hedefler.</p>
+    </div>
+    <div class="project" data-category="recent">
+        <h3>Bisiklet Sürücüleri İçin Sosyal Platform ve Navigasyon Sistemi</h3>
+        <img src="images/project2.png" alt="Bisiklet Sürücüleri Projesi">
+        <p>Bu proje ile şuan bitirme tezimi yapmaktayım. Bu proje, bisiklet sürücülerine güvenli ve sosyal bir sürüş deneyimi sunarak şehir yaşamında bisiklet kullanımını artırmayı amaçlamaktadır. Proje, Google Maps API, A* algoritması ve yapay zeka tabanlı öneri sistemleri kullanarak en uygun rotaları sunar ve sürüş güvenliğini artırmak için nabız takibi ile acil durum çağrısı yapabilmektedir. Ayrıca, bisiklet sürücülerinin grup sürüşleri düzenleyebileceği ve rota paylaşabileceği bir sosyal platform oluşturarak, sürüş deneyimini daha sosyal ve keyifli hale getirmeyi hedeflemektedir.</p>
+    </div>
+    <div class="project" data-category="recent">
+        <h3>Gezi Rotası Projesi</h3>
+        <img src="images/project4.png" alt="Gezi Rotası Projesi">
+        <p>Gezi Rotası Projesi, ülkemizde seyahat etmek isteyen kişilere rehberlik etmek amacıyla geliştirilmiştir. Proje, kullanıcılara gezilerini planlama ve gezi rotalarını oluşturma konusunda kolaylık sağlamayı hedefler. Yenilikçi ve kullanıcı dostu arayüzüyle ziyaretçilere kendi kişisel gezi rehberlerini oluşturma imkanı sunar. Projenin ilerleyen aşamalarında tüm şehirler için rehberlerin eklenmesi ve daha fazla restoran ve otel önerisi sunulması planlanmaktadır.</p>
+    </div>
+    <div class="project" data-category="popular">
+        <h3>ANN ve ANFIS Tabanlı Orman Yangını Tahmini</h3>
+        <img src="images/project3.png" alt="Orman Yangını Tahmin Projesi">
+        <p>Bu proje, yapay sinir ağları (ANN) ve uyarlamalı sinirsel bulanık çıkarım sistemi (ANFIS) kullanarak orman yangınlarının tahmin edilmesini hedeflemektedir. Proje, iklim değişikliklerinin etkisiyle artan orman yangınlarına yönelik bir çözüm sunar. ANN ve ANFIS modelleri, yangın riskini belirlemede ve önceden önlem alınmasında etkili bir araç olarak kullanılır. Bu modeller sayesinde yangın tahmin doğruluğu artar, böylece çevresel zararlar azaltılabilir.</p>
+    </div>
+    
+</section>
+
+
+
+</body>
+</html>
