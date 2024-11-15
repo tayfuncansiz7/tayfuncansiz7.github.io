@@ -59,34 +59,6 @@ function toggleBio() {
 
 // Proje Filtreleme
 function filterProjects(category) {
-    const allProjects = document.querySelectorAll('.project');
-
-    allProjects.forEach(project => {
-        project.style.display = 'none';
-    });
-
-    if (category === 'recent') {
-        const recentProjects = document.querySelectorAll('[data-category="recent"]');
-        recentProjects.forEach(project => {
-            if (!project.querySelector('h3').innerText.includes("Ambulans")) {
-                project.style.display = 'block';
-            }
-        });
-    } else if (category === 'popular') {
-        const popularProjects = [
-            document.querySelector('[data-category="recent"]'),
-            document.querySelector('[data-category="popular"]') 
-        ];
-        popularProjects.forEach(project => project.style.display = 'block');
-    } else if (category === 'all') {
-        allProjects.forEach(project => {
-            project.style.display = 'block';
-        });
-    }
-}
-
-// Proje Filtreleme
-function filterProjects(category) {
     const recentProjects = document.querySelectorAll('[data-category="recent"]');
     const popularProjects = document.querySelectorAll('[data-category="popular"]');
 
